@@ -1,0 +1,231 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+.container {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: coral;
+    overflow-x: hidden;
+}
+
+.header-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.img-header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    width: 100%;
+    background-image: url(./image/MAIN-BANNER.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-container {
+    background-color: transparent;
+    padding: 10px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.nav-list li {
+    margin: 0;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-list a:hover {
+    background-color: rgb(224, 192, 5);
+}
+
+
+.churros {
+    width: 100%;
+    padding: 20px;
+}
+
+.h1-main {
+    color: white;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.produto-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+
+.produto-card {
+    background-color: rgb(255, 220, 208);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    width: 23%;
+    max-width: 250px;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.produto-card:hover {
+    transform: translateY(-10px);
+}
+
+.produto-image {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 10px;
+}
+
+.produto-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.favorito-icon {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #FFF;
+    color: #FF6B6B;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 0.8em;
+}
+
+.produto-titulo {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+.produto-descri {
+    font-size: 0.9em;
+    color: #666;
+    font-weight: bold;
+}
+
+.produto-preço {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: coral;
+    margin: 10px 0;
+}
+
+.btn-compra {
+    background-color: rgb(224, 192, 5);
+    border: none;
+    border-radius: 20px;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.btn-compra:hover {
+    background-color: #FF6B6B;
+    color: white;
+}
+
+.section {
+    width: 100%;
+    padding: 5px;
+    background-color: rgb(252, 167, 136);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.sobre {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    
+}
+
+.img-section {
+    width: 100px;
+    height: auto;
+}
+
+.text-section {
+    font-size: 1em;
+    color: #333;
+}
+
+.social{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+@media (max-width: 768px) {
+    .produto-card {
+        width: 80%;
+    }
+
+    .produto-container {
+        flex-direction: column;
+    }
+
+    .footer,
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sobre {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
